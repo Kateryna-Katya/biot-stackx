@@ -1,19 +1,29 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="#" class="logo">
+          Biot<span class="logo__highlight">-Stackx</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav" id="nav-menu">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="#hero" class="nav__link">Главная</a></li>
+              <li class="nav__item"><a href="#platform" class="nav__link">Платформа</a></li>
+              <li class="nav__item"><a href="#features" class="nav__link">Преимущества</a></li>
+              <li class="nav__item"><a href="#innovations" class="nav__link">AI-Ядро</a></li>
+              <li class="nav__item"><a href="#blog" class="nav__link">База знаний</a></li>
+              <li class="nav__item"><a href="#cases" class="nav__link">Кейсы</a></li>
+              <li class="nav__item"><a href="#community" class="nav__link">Сообщество</a></li>
+          </ul>
+          <a href="#contact" class="btn btn--header mobile-only">Начать сейчас</a>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--header desktop-only">Начать сейчас</a>
+          <button class="burger" id="burger-btn" aria-label="Меню">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+          </button>
+      </div>
   </div>
 </header>
